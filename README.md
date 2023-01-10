@@ -4,9 +4,13 @@
 
 - first setup env file.
 
-- run command composer install
+- run composer install
 
-- run php artisan migrate:seed 
+- run php artisan migrate --seed 
+
+- run php artisan key:generate
+
+- run npm install express
 
 - 2 user will be created by seeder user1 and user2 
 
