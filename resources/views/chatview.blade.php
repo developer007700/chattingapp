@@ -276,9 +276,6 @@
                     <div class="ibox float-e-margins">
                         <div class="ibox-content">
                             <strong>Chat Room </strong>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Create Group
-                            </button>
                         </div>
                     </div>
                 </div>
