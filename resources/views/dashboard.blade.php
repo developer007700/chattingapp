@@ -4,6 +4,10 @@
                 margin-top: 20px;
             }
 
+            #send-message{
+               height: 50px;
+            }
+
             .active::after {
                 content: " 🟢";
                 font-size: 11px;
@@ -280,9 +284,6 @@
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
                                 <strong>Chat Room </strong>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Create Group
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -615,16 +616,6 @@
                                 $(".chatuser" + userID).addClass("active");
                             });
                         });
-                        /*socket.emit('chat', {
-                            user_id,
-                            user,
-                            message,
-                            image,
-                            reciver_id,
-                            date,
-                            message_id
-                        });*/
-
                         if(group_id){
                          var name = data.newdata.group.name;
                          html = '<div class="chat-message right right'+data.message_id+'"><img class="message-avatar" src="{{Auth::user()->image}}" alt=""><div class="message"><span class="message-date"> </span> <span class="message-date"> '+date+'</span><span class="message-content">' + message + '</span><i id="messagestatus'+data.message_id+'" class="fa fa-paper-plane-o" aria-hidden="true"></i></div></div>'

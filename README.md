@@ -6,6 +6,8 @@
 
 - run composer install
 
+- run npm install vite
+
 - run php artisan migrate --seed 
 
 - run php artisan key:generate
@@ -19,6 +21,8 @@
 ## how to run project
 
 - first run php artisan server
+
+- npm run dev
 
 - and than run npm start or node server.js
 

@@ -53,13 +53,6 @@ class ChatController extends Controller
         $newdata = Chatbtuser::with(['users','message','lastmessanger','group'])->where('user_id',Auth::id())->where('reciver_id',$request->reciver_id)->first();
         $groupUser = null;
         }
-
-      /*  $dt = new DateTime($data->created_at);
-        $tz = new DateTimeZone('Asia/Kolkata'); // or whatever zone you're after
-        $dt->setTimezone($tz);
-        dd($dt->format('Y-m-d H:i:s'));*/
-        //dd(Carbon::now()->toDateTimeString());
-
         $now = Carbon::now();
         $date = $now->diffForHumans($data->created_at);
         return response()->json(['success' => true, 'data' => $date,'id'=>$data->id,'groupUser'=>$groupUser,'newdata'=>$newdata]);
